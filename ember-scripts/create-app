@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# if [[ $# -lt 2 ]]; then
+#     echo "Usage: create-app <your-single-argument> (-backend: for backend apps)"
+#     exit 1
+# fi
+
+if [[ -d "$1" ]]; then
+    echo "Project already exists: $1"
+else
+    echo "Creating: $1"
+    if [[ "$2" == "-backend" ]]; then
+        mkdir "$1"
+        cd "$1"
+        npm init -y 
+        jq '. + {"type": "module"}' package.json > tmp.json && mv tmp.json package.json
+        jq '.scripts.dev = "npx nodemon ."' package.json > tmp.json && mv tmp.json package.json
+        npm install express nodemon
+        touch index.js
+    else 
+        npm create vite@latest "$1" -- --template react
+        cd "$1"
+        npm install
+        npm install sass
+    fi
+fi

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [[ $# -ne 1 ]]; then
+    echo "Usage: reupload <your-project>"
+    exit 1
+fi
+
+if [[ ! -d "$1" ]]; then 
+    echo "Project does not exist: $1"
+else
+    cd "$1"
+    npm run build
+    wrangler pages deploy dist --project-name="$1"
+fi

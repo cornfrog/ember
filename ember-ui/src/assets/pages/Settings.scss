@@ -1,0 +1,29 @@
+.update-button {
+    background-color: #ff7b47;
+    border-color: #ffa76a;
+    border-radius: .5rem;
+    color: #fff;
+
+    &:hover {
+        background-color: #ffa76a;
+    }
+}
+
+hr {
+    margin: 2rem 0;
+}
+
+input[type="text"] {
+    background-color: #1b1b1b;
+    border: 1px solid #292929;
+    border-radius: 0.5rem;
+    width: auto;
+    min-width: 50ch;
+    color: white;
+
+    &:focus {
+        outline: none;
+        border-color: #ff7b47;
+        box-shadow: 0 0 0 2px rgba(255, 123, 71, 0.3);
+    }
+}

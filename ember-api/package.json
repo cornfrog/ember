@@ -1,0 +1,23 @@
+{
+  "name": "ember-api",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "ember.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "npx nodemon .",
+    "migrate": "npx prisma migrate dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.12.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10",
+    "prisma": "^6.12.0"
+  }
+}

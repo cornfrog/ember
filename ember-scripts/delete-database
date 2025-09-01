@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [[ $# -ne 1 ]]; then
+    echo "Usage: delete-database <new-database>"
+    exit 1
+fi
+
+dropdb "$1"

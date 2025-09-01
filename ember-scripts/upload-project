@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [[ $# -ne 1 ]]; then
+    echo "Usage: upload-project <your-project>"
+    exit 1
+fi
+
+if [[ ! -d "$1" ]]; then
+    echo "Project does not exist: $1"
+else
+    cd "$1"
+    wrangler pages project create "$1" --production-branch master
+    npm run build
+    wrangler pages deploy dist --project-name="$1" 
+fi

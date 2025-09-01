@@ -1,0 +1,116 @@
+i {
+    display: block;
+    height: 24px;
+    width: 24px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: invert(1);
+}
+
+.grey {
+    filter: grayscale(1) !important;
+}
+
+.logo-icon {
+    background-image: url("/logo.svg");
+    filter: invert(0) !important;
+}
+
+.menu-icon {
+    background-image: url("/icons/menu-icon.svg");
+}
+
+.close-icon {
+    background-image: url("/icons/close-icon.svg");
+}
+
+.projects-icon {
+    background-image: url("/icons/projects-icon.svg");
+}
+
+.databases-icon {
+    background-image: url("/icons/databases-icon.svg");
+}
+
+.settings-icon {
+    background-image: url("/icons/settings-icon.svg");
+}
+
+.github-icon {
+    background-image: url("/icons/github-icon.svg");
+}
+
+.git-icon {
+    background-image: url("/icons/git-icon.svg");
+}
+
+.cloudflare-icon {
+    background-image: url("/icons/cloudflare-icon.svg");
+}
+
+.dots-icon {
+    background-image: url("/icons/dots-icon.svg");
+}
+
+.filter-icon {
+    background-image: url("/icons/filter-icon.svg");
+}
+
+.add-icon {
+    background-image: url("/icons/add-icon.svg");
+}
+
+.star-icon {
+    background-image: url("/icons/star-icon.svg");
+    filter: invert(0);
+}
+
+.edit-icon {
+    background-image: url("/icons/edit-icon.svg");
+}
+
+.cli-icon {
+    background-image: url("/icons/cli-icon.svg");
+}
+
+.cancel-icon {
+    background-image: url("/icons/cancel-icon.svg");
+}
+
+.psql-icon {
+    background-image: url("/icons/psql-icon.svg");
+    filter: invert(0) !important;
+}
+
+.prisma-icon {
+    background-image: url("/icons/prisma-icon.svg");
+}
+
+.delete-icon {
+    background-image: url("/icons/delete-icon.svg");
+}
+
+.frontend-icon {
+    background-image: url("/icons/frontend-icon.svg");
+}
+
+.backend-icon {
+    background-image: url("/icons/backend-icon.svg");
+}
+
+.sort-asc-icon {
+    background-image: url("/icons/sort-asc-icon.svg");
+}
+
+.sort-desc-icon {
+    background-image: url("/icons/sort-desc-icon.svg");
+}
+
+.run-icon {
+    background-image: url("/icons/run-icon.svg");
+}
+
+.install-icon {
+    background-image: url("/icons/install-icon.svg");
+}

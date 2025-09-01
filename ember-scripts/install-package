@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [[ $# -ne 2 ]]; then
+    echo "Usage: install-package <your-project> <package-name>"
+    exit 1
+fi
+
+cd "$1"
+npm install "$2"

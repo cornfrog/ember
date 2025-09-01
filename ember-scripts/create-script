@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [[ $# -ne 1 ]]; then
+    echo "Usage: create-script <your-single-argument>"
+    exit 1
+fi
+
+if [[ -e "$1" ]]; then
+    echo "Script already exists: $1"
+else
+    echo "Creating: $1"
+    touch "$1"
+    echo "#!/bin/bash" > "$1"
+    chmod +x "$1"
+fi

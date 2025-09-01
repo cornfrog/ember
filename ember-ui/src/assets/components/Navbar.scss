@@ -1,0 +1,27 @@
+@import url('https://fonts.cdnfonts.com/css/cyberverse');
+
+.navbar {
+    padding: 0 1rem;
+    border-bottom: 0.25rem solid #292929;
+
+    .nav-title {
+        font-family: 'Cyberverse', sans-serif;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .menu-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+        color: #ff7b47;
+        text-decoration: none;
+        transition: color .2s ease-in-out;
+
+        &:hover{
+            color: #ffa76a;
+        }
+    }
+}

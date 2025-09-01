@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [[ $# -ne 1 ]]; then
+    echo "Usage: create-gh-repo <your-project-name>"
+    exit 1
+fi
+
+if [[ ! -e "$1" ]]; then
+    echo "Error: $1 does not exist"
+else
+    cd $1
+    gh repo create $1 --public --source=. --remote=origin --push
+fi

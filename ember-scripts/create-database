@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [[ $# -ne 1 ]]; then
+    echo "Usage: create-database <new-database>"
+    exit 1
+fi
+
+createdb "$1"

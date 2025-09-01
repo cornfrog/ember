@@ -1,0 +1,204 @@
+@import url('https://fonts.cdnfonts.com/css/rem');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: #1b1b1b;
+    color: #f5e9e0;
+    font-family: 'REM', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.center-text {
+    text-align: center;
+}
+
+// background colors 
+.bg-transparent {
+    background-color: transparent;
+}
+// end of background colors 
+
+// borders
+.borders-none {
+    border: none;
+}
+// end of borders 
+
+// hide element
+.hidden {
+    display: none !important;
+}
+
+// end of hide element
+
+// cursor pointer
+.pointer {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+// end of cursor pointer
+
+// page 
+.page {
+    padding: 1rem;
+    min-height: 100vh;
+
+    .page-title {
+        text-align: center;
+    }
+}
+
+// end of page 
+
+// form
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    .form-label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+// end of form
+
+.display-block {
+    display: block;
+}
+
+// display flex 
+.flex-align-center-justify-start {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.flex-align-center-justify-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-align-center-justify-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+// end of display flex
+
+// flex gap
+.gap-1r {
+    gap: 1rem;
+}
+
+.gap-2r {
+    gap: 2rem;
+}
+
+.gap-5r {
+    gap: 5rem;
+}
+
+// end of flex gap
+
+// margin
+.margin-t-1-2r {
+    margin-top: .5rem;
+}
+
+.margin-t-1r {
+    margin-top: 1rem;
+}
+
+.margin-b-2r{
+    margin-bottom: 2rem;
+}
+
+.margin-tb-1r {
+    margin: 1rem 0;
+}
+
+.margin-tb-1-2r {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.margin-l-auto {
+    margin-left: auto;
+}
+
+.margin-r-4r {
+    margin-right: 4rem;
+}
+// end of margin
+
+// padding
+.padding-1-2r {
+    padding: .5rem;
+}
+
+.padding-1r {
+    padding: 1rem;
+}
+
+.padding-tb-1-2r {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.padding-lr-1-2r {
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+.padding-lr-1r {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.padding-tb-1r {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+// end of padding 
+
+// fonts 
+.font-size-1-15r{
+    font-size: 1.15rem;
+}
+// end of fonts 
+
+.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.hide {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+}
+
+.error-text {
+    color: #ff5c5c
+}

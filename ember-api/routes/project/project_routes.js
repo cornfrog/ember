@@ -1,0 +1,42 @@
+import { Router } from "express";
+import get_projects from "./get_projects.js";
+import get_project from "./get_project.js";
+import update_project from "./update_project.js";
+import create_project from "./create_project.js";
+import delete_project from "./delete_project.js";
+import favorite_project from "./favorite_project.js";
+import edit_project from "./edit_project.js";
+import open_in_cli from "./open_in_cli.js";
+import run_project from "./run_project.js";
+import enable_git from "./enable_git.js";
+import deploy_to_github from "./deploy_to_github.js";
+import deploy_to_cloudflare from "./deploy_to_cloudlfare.js";
+import enable_prisma from "./enable_prisma.js";
+import connect_to_database from "./connect_to_database.js.js";
+import view_database from "./view_database.js";
+import install_package from "./install_package.js";
+import redeploy_to_github from "./redeploy_to_github.js";
+import redeploy_to_cloudflare from "./redeploy_to_cloudflare.js";
+
+const project_routes = Router();
+
+project_routes.use("/get-projects", get_projects);
+project_routes.use("/get-project", get_project);
+project_routes.use("/update-project", update_project);
+project_routes.use("/create-project", create_project);
+project_routes.use("/delete-project", delete_project);
+project_routes.use("/favorite-project", favorite_project);
+project_routes.use("/edit-project", edit_project);
+project_routes.use("/open-in-cli", open_in_cli);
+project_routes.use("/run-project", run_project);
+project_routes.use("/enable-git", enable_git);
+project_routes.use("/deploy-to-github", deploy_to_github);
+project_routes.use("/redeploy-to-github", redeploy_to_github);
+project_routes.use("/deploy-to-cloudflare", deploy_to_cloudflare);
+project_routes.use("/redeploy-to-cloudflare", redeploy_to_cloudflare);
+project_routes.use("/enable-prisma", enable_prisma);
+project_routes.use("/connect-to-database", connect_to_database);
+project_routes.use("/view-database", view_database);
+project_routes.use("/install-package", install_package);
+
+export default project_routes;

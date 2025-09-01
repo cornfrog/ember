@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# if [[ $# -ne 1 ]]; then
+#     echo "Usage: edit-project <your-project>"
+#     exit 1
+# fi
+
+if [[ ! -d "$2" ]]; then
+    echo "Project does not exist: $1"
+else
+    cd "$2"
+    "$1" .
+fi

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [[ $# -ne 1 ]]; then
+    echo "Usage: view-database <your-project>"
+    exit 1
+fi
+
+if [[ ! -d "$1" ]]; then 
+    echo "Project does not exist: $1"
+else
+    cd "$1"
+    gnome-terminal --working-directory="$PWD" -- bash -c "npx prisma studio"
+
+fi

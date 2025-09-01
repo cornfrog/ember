@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [[ $# -ne 1 ]]; then
+    echo "Usage: redeploy-to-github <your-project-name>"
+    exit 1
+fi
+
+if [[ ! -e "$1" ]]; then
+    echo "Error: $1 does not exist"
+else
+    cd $1
+    git push origin HEAD
+    exit 0
+fi

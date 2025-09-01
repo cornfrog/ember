@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [[ $# -ne 1 ]]; then
+    echo "Usage: init-prisma <your-project>"
+    exit 1
+fi
+
+cd "$1"
+npm install prisma 
+npm install @prisma/client
+npx prisma init && sed -i 's|^DATABASE_URL=.*|DATABASE_URL="postgresql://postgres:postgres@localhost:5432/<DB_NAME>?schema=public"|' .env

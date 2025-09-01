@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [[ $# -ne 1 ]]; then
+    echo "Usage: init-git <your-project>"
+    exit 1
+fi
+
+cd "$1"
+git init -q
+git add .
+git commit -m "init commit"

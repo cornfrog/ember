@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [[ $# -ne 2 ]]; then
+    echo "Usage: git-commit <your-project> <commit-message>"
+    exit 1
+fi
+
+if [[ ! -d "$1" ]]; then 
+    echo "Project does not exist: $1"
+else
+    cd "$1"
+    git add . 
+    git commit -m "$2"
+fi
